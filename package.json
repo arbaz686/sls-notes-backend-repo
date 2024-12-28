@@ -12,7 +12,13 @@
   "dependencies": {
     "aws-sdk": "^2.1692.0",
     "moment": "^2.30.1",
+    "serverless-offline": "^14.4.0",
     "underscore": "^1.13.7",
     "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
   }
 }
