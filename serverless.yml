@@ -3,6 +3,7 @@ service: sls-notes-backend
 
 plugins:
   - serverless-offline
+  - serverless-domain-manager
 
 custom:
   allowedHeaders:
@@ -16,6 +17,12 @@ custom:
     - X-Amz-User-Agent
     - app_user_id
     - app_user_name
+  customDomain:
+    domainName: api.arbazahmad.in
+    basePath: 'v1'
+    stage: ${self:provider.stage}
+    certificateName: arbazahmad.in
+    createRoute53Record: true
 
 provider:
   name: aws
